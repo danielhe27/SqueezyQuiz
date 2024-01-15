@@ -137,4 +137,26 @@ function setNextQuestion() {
     }, 2000)
   };
   
- 
+  // Function to load scores from local storage
+  var loadScores = function () {
+    var savedScores = JSON.parse(localStorage.getItem("scores")) || [];
+  
+    if (!savedScores) {
+        return false;
+    }
+  
+    var initials = document.querySelector("#initials-field").value;
+    var newScore = {
+        score: timeLeft,
+        initials: initials
+    };
+  
+    savedScores.push(newScore);
+    console.log(savedScores)
+  
+    savedScores.forEach(score => {
+        initialsField.innerText = score.initials
+        scoreField.innerText = score.score
+    })
+  };
+  
