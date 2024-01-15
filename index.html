@@ -9,9 +9,65 @@
 <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-  <header>
-  <h1> Welcome to SqueezyQuiz!!</h1>
-  </header>
+<header>
+<!-- links to score secction where the user will be able to see the record -->
+<div class="scores">
+    <a id="highscores-link">History 🏆</a>
+</div>
+<!-- timer class, will be link it to javascript to make a countdown -->
+<div id="timer" class="timer">
+    Time: 75
+</div>
+</header>
+<!-- in this section we will include an tittle and p text to intruce the game to the user -->
+<section id="start-container" class="start-quiz">
+    <h1> Welcome to SqueezyQuiz!!</h1>
+    <p>
+      In the following 30 seconds you'll Step into elegance where fitness intertwines with wit! Flex your brain, flaunt fitness finesse, and relish in laughter. Lace up, strike a pose, and dive into the game where smiles and style reign supreme. Ready for a refined challenge? Let's go! 🏋️‍♂️😊💼
+    </p>
+    <!-- also we are creating a button to star the game -->
+    <div class="controls">
+      <button id="start-btn" class="start-btn">Start Game</button>
+  </div>
+  </section>
+  <!-- creating an id and also a class to hide those buttons until the game start, later this will be the options the user see when the game starts -->
+<section id="question-container" class="hide">
+    <h1 id="question">Question</h1>
+    <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+    </div>
+</section>
+    <!-- this id will be check if the answer is correct or not but still will be until until be necessary -->
+    <h2 id="check-answer" class="correct-wrong hide"></h2>
+<!-- this id it will contain score information -->
+<section id="score-container" class="hide">
+<!-- a name or nickname will be ask to put on this form with a length of max 10 characters -->
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+<!-- label to indicates to the user that needs a name to be saved -->
+            <label id="initials-label">Enter your initials to save the score:</label>
+            <input type="text" id="initials-field" maxlength="10" placeholder="Player name" />
+            <!-- submit button -->
+            <button id="submit-btn">Submit</button>
+        </form>
+</section>
+<!-- we are hiding higscores container  -->
+<section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+<!-- centered class to style  the text leaderboard to be centered -->
+            <h1 class="centered">Leaderboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <!-- button to restart and clear scores  to restart the game or delete the records on the local storage -->
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+</section>
   <!-- javascript link  -->
   <script src="./assets/js/script.js"></script>
 </body>
