@@ -190,4 +190,25 @@ function setNextQuestion() {
     localStorage.setItem("scores", JSON.stringify(scores));
   };
   
+  // Event listener for viewing high scores
+  viewHighScores.addEventListener("click", showHighScores);
+  
+  // Event listener for submitting scores
+  submitButton.addEventListener("click", function (event) {
+    event.preventDefault()
+    var initials = document.querySelector("#initials-field").value;
+    showHighScores(initials);
+  });
+  
+  // Event listener to restart or reload the page
+  restartButton.addEventListener("click", function () {
+    window.location.reload();
+  });
+  
+  // Event listener to clear local storage items
+  clearScoreButton.addEventListener("click", function () {
+    localStorage.clear();
+    document.getElementById("highscore").innerHTML = "";
+  });
+  
   
