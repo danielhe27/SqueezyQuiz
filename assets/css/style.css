@@ -1,3 +1,21 @@
+body { 
+  width: 100%; 
+  padding: 0; 
+  margin: 0; 
+  background-color: #4050A0;
+font-family: 'Silkscreen', sans-serif;
+  color: gold;
+  flex-wrap: wrap;
+  line-height: 50px;
+} 
+
+.container { 
+  display: flex; 
+  flex-wrap: wrap; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
+}
 /* will take 100% of the height */
 html, body{
   height:100%;
@@ -11,15 +29,10 @@ h1, p,  .controls {
   flex-wrap: wrap;
 }
 
-
-h1, p{
-  margin: 30px 285px
+h1{
+  text-align: center;
 }
 
-/* this class it wont display nothing  */
-.hide {
-  display: none;
-}
 
 /* center text margins and moving items to the right */
 h2{
@@ -32,7 +45,7 @@ h2{
 /* background color font colors and line height */
 body {
   background-color: #4050A0;
-font-family: 'Silkscreen', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
   color: gold;
   flex-wrap: wrap;
   line-height: 50px;
@@ -48,6 +61,93 @@ button {
   text-align: center;
   padding:20px;
   width: 200px;
-  }
+}
 
+/* space between the buttons */
+.btn-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+/* rounding box */
+#initials-field {
+  border-radius: 40px;
+  padding: 10px;
+}
+
+/* responsive function */
+@media screen and (max-width: 2680px) {
+  /* Styles for screens smaller than 768px */
+  body {
+    font-size: 20px;
+    align-content: space-between
+  }
+}
+  h2 {
+    margin-left: 0;
+    margin-top: 50px;
+  }
   
+  .highscores-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .highscores-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+  }
+.highscores-container{
+  display: flex;
+  justify-items: right;
+  margin-left: 380px;
+}
+#high-scores{
+  text-align: center;
+  margin-top: 200px;
+  line-height: 20px;
+  
+}
+
+.name-div {
+  font-size: 20px;
+  color: cornsilk;
+}
+.score-div {
+  font-size: 15px;
+  color: black;
+}
+
+#check-answer {
+  align-items: flex-start;
+  display: flex;
+}
+#question-container{
+  margin-top: -272px;
+  margin-left: 70px;
+  
+}
+
+.next-btn {
+  size: 20px;
+  background: aquamarine;
+}
+
+#question {
+  background: linear-gradient(to right, #7c173e, #773408,#610761, #bdab09);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+
+#submit-form{
+  margin-top: 0px;
+}
+/* this class it wont display nothing  */
+.hide {
+  display: none;
+}

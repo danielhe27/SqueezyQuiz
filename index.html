@@ -37,21 +37,21 @@
   </div>
   </section>
   <!-- creating an id and also a class to hide those buttons until the game start, later this will be the options the user see when the game starts -->
-<section id="question-container" class="hide">
-    <h1 id="question">Question</h1>
-    <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
-    </div>
+  <section id="question-container" class="hide">
+      <h1 id="question">Question</h1>
+      <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+        <!-- this id will be check if the answer is correct or not but still will be until until be necessary -->
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
     <!-- control class and funtionality when i click start next -->
     <div class="controls">
         <button id="next-btn" class="next-btn hide">Next</button>
     </div>
 </section>
-    <!-- this id will be check if the answer is correct or not but still will be until until be necessary -->
-    <h2 id="check-answer" class="correct-wrong hide"></h2>
 <!-- this id it will contain score information -->
 <section id="score-container" class="hide">
 <!-- a name or nickname will be ask to put on this form with a length of max 10 characters -->
@@ -69,7 +69,8 @@
         <div id="high-scores">
 <!-- centered class to style  the text leaderboard to be centered -->
             <h1 class="centered">Leaderboard</h1>
-            <div id="highscore" class="highscore highscore-list">
+            <div id="highscore" class="highscore-list">
+                
             </div>
             <!-- button to restart and clear scores  to restart the game or delete the records on the local storage -->
             <div class="controls">
