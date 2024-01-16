@@ -21,6 +21,7 @@ h1, p{
   display: none;
 }
 
+/* center text margins and moving items to the right */
 h2{
   text-align: center;
   justify-content: flex-end;
@@ -28,3 +29,25 @@ h2{
   margin-top: 150px;
 }
 
+/* background color font colors and line height */
+body {
+  background-color: #4050A0;
+font-family: 'Silkscreen', sans-serif;
+  color: gold;
+  flex-wrap: wrap;
+  line-height: 50px;
+  padding: 20px;
+}
+
+/* decoration and button rounded */
+button {
+  border-radius: 20px;
+  background-color: black;
+  font-family:'Bungee Spice', sans-serif;
+  margin: 20px;
+  text-align: center;
+  padding:20px;
+  width: 200px;
+  }
+
+  
