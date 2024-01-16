@@ -27,14 +27,21 @@ h1, p,  .controls {
 h2{
   text-align: center;
   justify-content: flex-end;
-  margin-left: 250px;
-  margin-top: 150px;
 }
 /* margins to make it centered */
 #question-container {
   margin-top: 180px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#submit-form{
+  margin-top: 200px;
+  margin-left: 200px;
+  display: flow;
+}
+#high-scores {
+margin-top: 418px;
 }
 
 /* decoration and button rounded */
@@ -48,6 +55,20 @@ button {
   width: 200px;
 }
 
+/* setting some color and size text */
+.name-div {
+  font-size: 20px;
+  color: cornsilk;
+}
+.score-div {
+  font-size: 15px;
+  color: black;
+}
+/* more sizing and color */
+.next-btn {
+  size: 20px;
+  background: aquamarine;
+}
 /* space between the buttons */
 .btn-grid {
   display: flex;
@@ -60,45 +81,15 @@ button {
   padding: 10px;
 }
 
-
-h2 {
-  margin-left: 0;
-  margin-top: 50px;
-}
-/* setting some color and size text */
-.name-div {
-  font-size: 20px;
-  color: cornsilk;
-}
-.score-div {
-  font-size: 15px;
-  color: black;
-}
-
 #check-answer {
   justify-content: center;
   display: flex;
 }
-
-.next-btn {
-  size: 20px;
-  background: aquamarine;
-}
-
+/* some effect on the question to give color decoration */
 #question {
   background: linear-gradient(to right, #7c173e, #773408,#610761, #bdab09);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-
-#submit-form{
-  margin-top: 200px;
-  margin-left: 200px;
-  display: flow;
-}
-
-#high-scores {
-margin-top: 418px;
 }
 
 /* this class it wont display nothing  */
