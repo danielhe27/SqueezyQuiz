@@ -1,38 +1,27 @@
+/* setting parameters */
 body { 
   width: 100%; 
-  padding: 0; 
   margin: 0; 
   background-color: #4050A0;
-font-family: 'Silkscreen', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
   color: gold;
   flex-wrap: wrap;
   line-height: 50px;
+  padding: 20px;
+  font-size: 20px;
+  align-content: space-between
 } 
 
-.container { 
-  display: flex; 
-  flex-wrap: wrap; 
-  align-items: center; 
-  justify-content: center; 
-  height: 100vh; 
-}
 /* will take 100% of the height */
 html, body{
-  height:100%;
   margin: 0;
   display: flex;
 }
-
 /* elements and classes will be centered and wrapped if the screen goes small */
 h1, p,  .controls {
   text-align: center;
   flex-wrap: wrap;
 }
-
-h1{
-  text-align: center;
-}
-
 
 /* center text margins and moving items to the right */
 h2{
@@ -41,15 +30,11 @@ h2{
   margin-left: 250px;
   margin-top: 150px;
 }
-
-/* background color font colors and line height */
-body {
-  background-color: #4050A0;
-  font-family: 'Silkscreen', sans-serif;
-  color: gold;
-  flex-wrap: wrap;
-  line-height: 50px;
-  padding: 20px;
+/* margins to make it centered */
+#question-container {
+  margin-top: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* decoration and button rounded */
@@ -75,44 +60,12 @@ button {
   padding: 10px;
 }
 
-/* responsive function */
-@media screen and (max-width: 2680px) {
-  /* Styles for screens smaller than 768px */
-  body {
-    font-size: 20px;
-    align-content: space-between
-  }
-}
-  h2 {
-    margin-left: 0;
-    margin-top: 50px;
-  }
-  
-  .highscores-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .highscores-container {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 50px;
-    }
-  }
-.highscores-container{
-  display: flex;
-  justify-items: right;
-  margin-left: 380px;
-}
-#high-scores{
-  text-align: center;
-  margin-top: 200px;
-  line-height: 20px;
-  
-}
 
+h2 {
+  margin-left: 0;
+  margin-top: 50px;
+}
+/* setting some color and size text */
 .name-div {
   font-size: 20px;
   color: cornsilk;
@@ -123,13 +76,8 @@ button {
 }
 
 #check-answer {
-  align-items: flex-start;
+  justify-content: center;
   display: flex;
-}
-#question-container{
-  margin-top: -272px;
-  margin-left: 70px;
-  
 }
 
 .next-btn {
@@ -143,11 +91,19 @@ button {
   -webkit-background-clip: text;
 }
 
-
 #submit-form{
-  margin-top: 0px;
+  margin-top: 200px;
+  margin-left: 200px;
+  display: flow;
 }
+
+#high-scores {
+margin-top: 418px;
+}
+
 /* this class it wont display nothing  */
 .hide {
   display: none;
 }
+
+
