@@ -1,4 +1,30 @@
+/* will take 100% of the height */
+html, body{
+  height:100%;
+  margin: 0;
+  display: flex;
+}
+
+/* elements and classes will be centered and wrapped if the screen goes small */
+h1, p,  .controls {
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+h1, p{
+  margin: 30px 285px
+}
+
+/* this class it wont display nothing  */
 .hide {
   display: none;
+}
+
+h2{
+  text-align: center;
+  justify-content: flex-end;
+  margin-left: 250px;
+  margin-top: 150px;
 }
 
