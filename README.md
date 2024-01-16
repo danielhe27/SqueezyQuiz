@@ -24,6 +24,9 @@ The SqueezyQuiz Game is a web-based quiz application designed to test and enhanc
 1. Click the "Start Quiz" button to begin.
 2. Answer each question within the allocated time.
 3. Receive your final score at the end of the quiz.
+4. To start the fun please click in the link below
+# https://danielhe27.github.io/SqueezyQuiz/
+
 
 ## Screenshots
 ![screencapture-file-Users-herrera-quizproject-SqueezyQuiz-index-html-2024-01-14-21_53_18](https://github.com/danielhe27/SqueezyQuiz/assets/142111314/507fe3b9-dee8-4e85-a065-f0e8d3463739)
