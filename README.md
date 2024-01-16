@@ -21,7 +21,7 @@ The SqueezyQuiz Game is a web-based quiz application designed to test and enhanc
 
 ## Usage
 
-1. Click the "Start Quiz" button to begin.
+1. Click the "Start Game" button to begin.
 2. Answer each question within the allocated time.
 3. Receive your final score at the end of the quiz.
 4. To start the fun please click in the link below
