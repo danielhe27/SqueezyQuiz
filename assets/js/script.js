@@ -211,4 +211,51 @@ function setNextQuestion() {
     document.getElementById("highscore").innerHTML = "";
   });
   
+  // Array of questions
+  var questions = [
+    {
+      question: "Which muscle of your body is able to recover faster?",
+      answers: [
+        { text: "Legs", correct: true }, 
+        { text: "Chest", correct: false },
+        { text: "Biceps", correct: false },
+        { text: "Neck", correct: false }
+      ]
+    },
+    { 
+      question: "Please select which habit you should stop because you consider harmful?", 
+      answers: [
+        { text: "Smoke", correct: true },
+        { text: "Drugs", correct: true },
+        { text: "Alcohol", correct: true }
+      ]
+    },
+    {
+      question: "What exercise is the most effective to work your whole body?",
+      answers: [
+        { text: "Bicep-curls", correct: false },
+        { text: "burpees", correct: true },
+        { text: "Planks", correct: false },
+        { text: "Jumping-jacks", correct: false }
+      ]
+    },
+    {
+      question: "for how long in average whe should walk per day?",
+      answers: [
+        { text: "15-minutes", correct: true },
+        { text: "2-hours", correct: false },
+        { text: "0", correct: false },
+        { text: "45-minutes", correct: false }
+      ]
+  },
+  {
+    question: "how many hours humans needs to sleep",
+    answers: [
+      { text: "10-hours", correct: false },
+      { text: "2-hours", correct: false },
+      { text: "6-hours", correct: true },
+      { text: "8-hours", correct: false }
+    ]
+},
+  ];
   
